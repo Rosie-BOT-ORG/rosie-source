@@ -1,9 +1,10 @@
 import { REST, Routes, Client } from 'discord.js'
 import { readdirSync } from 'fs'
 import { join } from 'path'
+import config from './config';
 
-const CLIENT_ID = process.env.CLIENT_ID || "787081291229167626";
-const TOKEN = process.env.TOKEN || "Nzg3MDgxMjkxMjI5MTY3NjI2.GTfh5k.CuoLubuiFlAoCXfgjgascr-iceOEuTWmBFxxdY";
+const CLIENT_ID = config.CLIENT_ID;
+const TOKEN = config.TOKEN
 
 export const commands = [];
 const rest = new REST({ version: '10' }).setToken(TOKEN);

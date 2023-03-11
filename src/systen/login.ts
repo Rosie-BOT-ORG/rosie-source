@@ -1,6 +1,7 @@
 import type { Client } from 'discord.js'
+import config from './config';
 
-const TOKEN = process.env.TOKEN || "Nzg3MDgxMjkxMjI5MTY3NjI2.GTfh5k.CuoLubuiFlAoCXfgjgascr-iceOEuTWmBFxxdY";
+const TOKEN = config.TOKEN;
 
 export default async function login(client: Client) {
     try {
