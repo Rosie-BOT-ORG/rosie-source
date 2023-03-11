@@ -1,7 +1,7 @@
 import { ChatInputCommandInteraction, Client } from "discord.js";
-import { join } from 'path'
+import { join } from 'path';
+import config from "../config";
 import { commands } from "./commandsManager";
-import config from "./config";
 
 var usersInCooldown = [];
 

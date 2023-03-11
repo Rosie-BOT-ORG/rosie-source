@@ -1,7 +1,7 @@
-import { REST, Routes, Client } from 'discord.js'
-import { readdirSync } from 'fs'
-import { join } from 'path'
-import config from './config';
+import { Client, REST, Routes } from 'discord.js';
+import { readdirSync } from 'fs';
+import { join } from 'path';
+import config from '../config';
 
 const CLIENT_ID = config.CLIENT_ID;
 const TOKEN = config.TOKEN

@@ -1,5 +1,5 @@
-import type { Client } from 'discord.js'
-import config from './config';
+import type { Client } from 'discord.js';
+import config from '../config';
 
 const TOKEN = config.TOKEN;
 
