@@ -4,7 +4,7 @@ import { join } from 'path';
 import config from '../config';
 
 const CLIENT_ID = config.CLIENT_ID;
-const TOKEN = config.TOKEN
+const TOKEN = config.TOKEN;
 
 export const commands = [];
 const rest = new REST({ version: '10' }).setToken(TOKEN);

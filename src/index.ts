@@ -11,15 +11,15 @@ const client = new Client({
 });
 
 async function main() {
-    await server();
-    login(client);
-
     client.on('ready', () => {
         updateClientCommands(client);
         setClientEvents(client);
-
+        
         console.log("BOT online.");
     });
+
+    await server();
+    login(client);
 }
 
 main();
