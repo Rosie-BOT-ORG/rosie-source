@@ -24,7 +24,7 @@ export default {
         });
 
         interaction.editReply(
-            `📡 Latência do BOT: ${replyPing}ms\n🔨 Latência do servidor: ${rosiePing}ms\n🤖 Latência do WebSocket: ${client.ws.ping}ms`
+            `🤖 Latência do BOT: ${replyPing}ms\n📡 Latência do servidor: ${rosiePing}ms\n🔨 Latência do WebSocket: ${client.ws.ping}ms`
         );
     }
 }
